@@ -52,9 +52,10 @@ class _TextPageViewState extends State<TextPageView> {
                     return Padding(
                       padding: const EdgeInsets.only(left: 8.0, right: 8),
                       child: Center(
-                        child: Text(
+                        child: SelectableText(
                           controlBloc.splittedTextList[index],
                           style: _textStyle,
+                          textAlign: TextAlign.center,
                         ),
                       ),
                     );
